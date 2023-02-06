@@ -1,3 +1,12 @@
+# Quick Regex
+```js
+^.*center;> // up to center
+^.{50,} // match length greater than
+^.{0,10}$ // match length less than
+```
+
+-----------------------------------------------------------------------------------------
+
 # Quick Express
 ```js
 npm init -y // create JSON, skip prompts
