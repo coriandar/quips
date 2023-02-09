@@ -1,3 +1,14 @@
+# Quick Vim
+```js
+:set nu // line number
+:set rnu // relative line number
+
+ctrl + o // jumplist prev
+ctrl + i // jumplist next
+```
+
+-----------------------------------------------------------------------------------------
+
 # Quick Regex
 ```js
 ^.*center;> // up to center
