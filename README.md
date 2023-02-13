@@ -5,14 +5,38 @@
 
 ctrl + o // jumplist prev
 ctrl + i // jumplist next
+
+ctrl + v // visual block mode
 ```
 
 -----------------------------------------------------------------------------------------
 
 # Quick Regex
 ```js
+g //global
+i //case insensitive
+m //multiline
+s //sinlge line
+u //unicode
+y //sticky
+
+\s // any whitespace
+\r // carriage return
+^  // start of line
+$  // end of line
+.  // any except newline
+?  // zero or one, optional
+*  // zero or more
+```
+
+```js
+//js
+/^.{20,}(\r?\n|$)/gm // match greater than 20
+/^\s*(\r?\n|$)/gm // match empty lines
+
+// npp
 ^.*center;> // up to center
-^.{50,} // match length greater than
+^.{20,} // match length greater than
 ^.{0,10}$ // match length less than
 ```
 
