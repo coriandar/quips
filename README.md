@@ -1,17 +1,16 @@
-# Quick Vim
+# vim
 ```js
 :set nu // line number
 :set rnu // relative line number
 
 ctrl + o // jumplist prev
 ctrl + i // jumplist next
-
 ctrl + v // visual block mode
 ```
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
 
-# Quick Regex
+# regex
 ```js
 g //global
 i //case insensitive
@@ -40,9 +39,30 @@ $  // end of line
 ^.{0,10}$ // match length less than
 ```
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
 
-# Quick Express
+# grep
+```js
+// recursive sub-dir, -l only matching filenames
+// piped to xargs, -I specify placeholder {}
+grep -Rl --include={*.mkv,*.mp4} . | xargs -I {} mv {} /mnt/path/
+```
+
+-------------------------------------------------
+
+# shell
+```js
+cd - // toggle previous directory
+ctrl + l //clear terminal
+echo hello > hello.txt // stream hello' into txt 
+cat < hello.txt // stream input from hello.txt
+echo hello >> hello.txt // append
+curl... | grep... // pipe, output from left, input to right
+```
+
+-------------------------------------------------
+
+# express
 ```js
 npm init -y // create JSON, skip prompts
 npm i express // install express
@@ -60,9 +80,9 @@ app.listen(port, () => {
 })
 ```
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
 
-# Quick Git
+# git
 [Oh Shit, Git!?!][2.1]
 
 [2.1]: <https://ohshitgit.com/>
@@ -109,16 +129,19 @@ git switch -c <branch-name> // branch & switch
 git merge <branch-name> // switch to receiving first
 ```
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
 
-# Quick JS
+# js
+```js
+array.reduce((a, b) => a + b); // sum array
+```
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
 
-# Quick CSS
+# css
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
 
-# Quick HTML
+# html
 
------------------------------------------------------------------------------------------
+-------------------------------------------------
