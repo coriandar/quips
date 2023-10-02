@@ -1,4 +1,4 @@
-# git
+## git
 
 [Oh Shit, Git!?!][2.1]
 
@@ -57,7 +57,7 @@ git merge <branch-name> // switch to receiving first
 
 ---
 
-# regex
+## regex
 
 ```js
 g //global
@@ -89,7 +89,7 @@ $  // end of line
 
 ---
 
-# grep
+## grep
 
 ```js
 // recursive sub-dir, -l only matching filenames
@@ -99,7 +99,7 @@ grep -Rl --include={*.mkv,*.mp4} . | xargs -I {} mv {} /mnt/path/
 
 ---
 
-# shell
+## shell
 
 ```js
 cd - // toggle previous directory
@@ -108,6 +108,14 @@ echo hello > hello.txt // stream hello' into txt
 cat < hello.txt // stream input from hello.txt
 echo hello >> hello.txt // append
 curl... | grep... // pipe, output from left, input to right
+```
+
+---
+
+## Terminal
+
+```js
+netsh wlan show profile name="wifiName" key=clear // find wifi password
 ```
 
 ---
