@@ -55,7 +55,34 @@ git switch -c <branch-name> // branch & switch
 git merge <branch-name> // switch to receiving first
 ```
 
----
+--------------------------------------------------
+
+## vim
+```c
+// vim jumplist
+<C-o> // up list (back)
+<C-i> // down list (forward)
+
+// built in grep
+:grep KEYWORD **/*.js // search every file(**/) that is .js (*.js)
+:copen // reopens quickfix list
+:cnext // goes to next file, also not need be in copen
+
+// delete
+dt<CHAR> // delete until the char
+
+// windows
+<C-w> s // split hori
+<C-w> v // split vert
+<C-w> l // move to right view
+<C-w> o // close all otehr views
+
+// netrw
+:Vew // vertical explore
+:Sex // Hori explore
+```
+
+--------------------------------------------------
 
 ## regex
 
@@ -87,7 +114,7 @@ $  // end of line
 ^.{0,10}$ // match length less than
 ```
 
----
+--------------------------------------------------
 
 ## grep
 
@@ -97,7 +124,7 @@ $  // end of line
 grep -Rl --include={*.mkv,*.mp4} . | xargs -I {} mv {} /mnt/path/
 ```
 
----
+--------------------------------------------------
 
 ## shell
 
@@ -110,7 +137,7 @@ echo hello >> hello.txt // append
 curl... | grep... // pipe, output from left, input to right
 ```
 
----
+--------------------------------------------------
 
 ## Terminal
 
@@ -118,4 +145,4 @@ curl... | grep... // pipe, output from left, input to right
 netsh wlan show profile name="wifiName" key=clear // find wifi password
 ```
 
----
+--------------------------------------------------
